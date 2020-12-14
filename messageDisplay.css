@@ -1,0 +1,189 @@
+/* Dark background with light text */
+body {
+	background-color: #121212;
+	color: #e6e6e6;
+}
+
+.content {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: 	border-box; 
+	box-sizing: 		border-box; 
+	display: block;
+
+	width: 65vw;
+	height: 90vh;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 5px;
+}
+
+.downloadBtn {
+	/*transition: background-color 200ms linear;*/
+	background-color: #232323;	/* Lighter background */
+	color: #e6e6e6;
+
+	border: none;
+
+	text-align: left;
+
+	width: 100%;
+
+	font-size: 14px;
+
+	text-decoration: none;
+}
+
+.firstDownloadBtn {
+	border-radius: 8px 8px 0px 0px;
+}
+
+.downloadBtn:hover {
+	background-color: #464646;
+}
+
+/* Background color one level above background. Small blue, rounded border. */
+textarea {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: 	border-box; 
+	box-sizing: 		border-box; 
+	display: block;
+
+	float: left;
+
+	background-color: #232323; 	/* Lighter background */
+	color: #e6e6e6;				/* Light text */
+
+	cursor: default;			/* Default cursor */
+
+	width: 67.5%; 
+	height: 85%;
+
+	margin-top: 2.5%;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 5px;
+
+	border: none;				/* No border */
+	border-radius: 8px;			/* Rounded shape */
+	border: 1px solid #3949ab;
+
+	resize: none;
+}
+
+#downloadDiv {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: 	border-box; 
+	box-sizing: 		border-box; 
+	display: block;
+
+	float: left;
+
+	background-color: #232323; 	/* Lighter background */
+	color: #e6e6e6;				/* Light text */
+
+	cursor: default;			/* Default cursor */
+
+	width: 30%; 
+	height: 85%;
+
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	margin-right: auto;
+
+	border: none;				/* No border */
+	border-radius: 8px;			/* Rounded shape */
+	border: 1px solid #3949ab;
+}
+
+/* Disable focus boxes in all elements in all browsers (kind of) */
+*:focus {
+	outline: none;
+}
+
+/* Disabled inner focus box in buttons in Firefox */
+*::-moz-focus-inner {
+	border: 0;
+}
+
+#reloadBtn {
+	transition: background-color 200ms linear;
+	background-color: #3F51BA;	/* Lighter background */
+	color: #e6e6e6;
+
+	border: none;
+	border-radius: 4px;
+
+	text-align: center;
+
+	width: 3vw;
+	height: 1vh;
+
+	min-width: 90px;
+	min-height: 30px;
+
+	position: fixed;
+	top: 5px;
+	left: 5px;
+
+	text-decoration: none;
+}
+
+#reloadBtn:hover {
+	background-color: #303F9F;
+}
+
+/* Disable focus ring on select boxes in Firefox */
+select:-moz-focusring{
+	color: transparent;
+	text-shadow: 0 0 0 #fff;
+}
+
+.headerLabel {
+	cursor: default;
+	
+	text-align: center;
+
+	width: 98%;
+	
+	margin-left: 1%;
+}
+
+.messageHeader {
+	cursor: default;
+	
+	text-align: center;
+
+	float: left;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 67.5%; 
+}
+
+.attachmentHeader {
+	cursor: default;
+	
+	text-align: center;
+
+	float: left;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 2.5%;
+	margin-right: auto;
+
+	width: 30%;
+}
+
+.messageHeader h3, .attachmentHeader h3 {
+	margin: 0;
+}
+
+

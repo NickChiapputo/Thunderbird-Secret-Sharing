@@ -1,0 +1,150 @@
+/* Dark background with light text */
+body {
+	background-color: #121212;
+	color: #e6e6e6;
+
+	width: 300px;
+	height: 425px;
+}
+
+hr {
+	color: #7986cb;
+
+	border-width: 0.5vh;
+}
+
+/*td {
+	border: 1px solid green;
+}*/
+
+/* Background color one level above background. Small blue, rounded border. */
+textarea {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: 	border-box; 
+	box-sizing: 		border-box; 
+	display: block;
+
+	background-color: #232323; 	/* Lighter background */
+	color: #e6e6e6;				/* Light text */
+
+	cursor: default;			/* Default cursor */
+
+	width: 85%; 
+	
+	min-height: 40vh;
+	max-height: 75vh;
+
+	margin-top: 2.5vh;
+	margin-left: auto;
+	margin-right: auto;
+
+	border: none;				/* No border */
+	border-radius: 8px;			/* Rounded shape */
+	border: 1px solid #3949ab;
+}
+
+input {
+	background-color: #333;
+	color: #e6e6e6;
+	border: none;
+	text-decoration: none;
+}
+
+input:valid {
+	border: green;
+}
+
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+input[ type="number" ] {
+	/*-moz-appearance: textfield;*/
+
+	border: none;
+	border-radius: 4px;
+
+	text-align: center;
+
+	height: 20px;
+
+	width: 50px;
+	/*margin-left: 20%;*/
+	margin-bottom: 10px;
+}
+
+input[ type="text" ] {
+	margin-bottom: 10px;
+	height: 20px;
+	border-radius: 4px;
+}
+
+input[ type="button" ] {
+	transition: background-color 500ms linear;
+	background-color: #3F51B5;	/* Lighter background */
+	color: #e6e6e6;
+
+	border: none;
+	border-radius: 4px;
+
+	text-align: center;
+
+	height: 30px;
+
+	/*padding-top: 3px;
+	padding-bottom: 3px;*/
+
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 10px;
+
+	text-decoration: none;
+}
+
+input[ type="button" ]:hover {
+	transition: background-color 200ms linear;
+	background-color: #303F9F;
+}
+
+select {
+	background-color: #333;
+	
+	color: #e6e6e6;
+	text-decoration: none;
+	text-align: left;
+
+	border: none;
+	border-radius: 8px;
+
+	width: 70%;
+	height: 35px;
+
+	margin-left: 15%;
+	margin-bottom: 10px;
+}
+
+/* Disable focus boxes in all elements in all browsers (kind of) */
+*:focus {
+	outline: none;
+}
+
+/* Disabled inner focus box in buttons in Firefox */
+*::-moz-focus-inner {
+	border: 0;
+}
+
+/* Disable focus ring on select boxes in Firefox */
+select:-moz-focusring{
+	color: transparent;
+	text-shadow: 0 0 0 #fff;
+}
+
+.headerLabel {
+	cursor: default;
+	
+	text-align: center;
+
+	width: 98%;
+	
+	margin-left: 1%;
+}

@@ -1,0 +1,46 @@
+{
+	"manifest_version": 2,
+	"name": "Secret Sharing",
+	"description": "Adds the ability to send messages in a distributed form via different servers for enhanced privacy.",
+	"version": "1.0",
+	"author": "Nicholas Chiapputo",
+	"applications": {
+		"gecko": {
+			"id": "add-on_name@website",
+			"strict_min_version": "78.0b1"
+		}
+	},
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Secret Sharing",
+		"default_icon": "images/internet-32px.png"
+	},
+	"compose_action": {
+		"default_title": "Secret Share",
+		"default_icon": "images/internet-32px.png"
+	},
+	"message_display_action": {
+		"default_title": "Reconstruct Message",
+		"default_icon": "images/internet-32px.png"
+	},
+	"permissions": [
+		"accountsFolders",
+		"accountsRead",		// Necessary for searching for matching messages.
+		"addressBooks",
+		"compose",          // Compose new messages
+		"downloads",		// Access to browser.downloads to download reconstsructed e-mail attachments.
+		"messagesRead",     // Read messagse
+		"storage",          // Necessary for storing preferences.
+		"tabs"              // Necessary to get information about tabs that are open.
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"icons": {
+		"64": "images/internet.png",
+		"32": "images/internet-32px.png",
+		"16": "images/internet-16px.png"
+	}
+}

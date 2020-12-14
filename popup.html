@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>popup.html</title>
+		<script defer="" src="popup.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="popup.css">
+	</head>
+	<body>
+		<div class="headerLabel">
+			<h3>Scheme</h3>
+		</div>
+
+		<select name="scheme" id="schemeSelect">
+			<option value="sss"> Shamir Secret Sharing </option>
+			<option value="add"> (2, 2) Additive Secret Sharing </option>
+			<option value="rss" selected> Robust Secret Sharing </option>
+		</select>
+		
+		<table style="width: 70%; margin-left: 15%;">
+			<tr>
+				<td align="left">Parties</td>
+				<td><input id="schemeParties" type="number" min="1"/></td>
+			</tr>
+			
+			<tr>
+				<td align="left">Threshold</td>
+				<td><input id="schemeThreshold" type="number" min="1"/></td>
+			</tr>
+		</table>
+
+		<div class="headerLabel">
+			<h3>Address Book</h3>
+		</div>
+
+		<select name="addressBook" id="addressBookSelect">
+			<!-- <option value="Personal Address Book"> Personal Address Book </option>
+			<option value="Secret Sharing"> Secret Sharing </option>
+			<option value="Collected Addresses" selected> Collected Addresses </option> -->
+		</select>
+
+		<hr>
+
+		<input id="schemeBtn" type="button" value="Update"/>
+		<input id="reconstructBtn" type="button" style="margin-top: 25px; height: 50px; white-space: normal;" value="View Last Reconstructed Message"/>
+
+	</body>
+</html>
